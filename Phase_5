@@ -1344,7 +1344,21 @@ Dump of assembler code for function phase_5:
    0x0000000000401108 <+135>:	add    $0x18,%rsp
 => 0x000000000040110c <+139>:	retq   
 End of assembler dump.
-(gdb) ni
+(gdb) ni  // next instruction
 main (argc=<optimized out>, argv=<optimized out>) at bomb.c:102
 102	    phase_defused();
-(gdb) 
+(gdb) d
+Delete all breakpoints? (y or n) y
+(gdb) r answers.txt
+The program being debugged has been started already.
+Start it from the beginning? (y or n) y
+Starting program: /home/ngawang/Desktop/Ngawang/CS I/Assignment 1/bomb001/bomb answers.txt
+Welcome to my fiendish little bomb. You have 6 phases with
+which to blow yourself up. Have a nice day!
+Phase 1 defused. How about the next one?
+That's number 2.  Keep going!
+Halfway there!
+So you got that one.  Try this one.
+5 115  // Corect answer for phase_5, phase_5 defused.
+Good work!  On to the next...
+
