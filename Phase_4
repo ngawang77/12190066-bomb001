@@ -956,7 +956,7 @@ End of assembler dump.
 0x0000000000401080 in phase_4 ()
 (gdb) ni
 main (argc=<optimized out>, argv=<optimized out>) at bomb.c:96
-96          phase_defused();			//Phase_4 has been diffused
+96          phase_defused();			//Phase_4 has been defused
 (gdb) d
 Delete all breakpoints? (y or n) y
 (gdb) run
@@ -971,5 +971,5 @@ Phase 1 defused. How about the next one?
 That's number 2.  Keep going!
 2 409
 Halfway there!
-8 35			//Correct input of phase_4, the phase_4 has been diffused
+8 35			//Correct input of phase_4, the phase_4 has been defused
 So you got that one.  Try this one.
